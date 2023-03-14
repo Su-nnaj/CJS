@@ -691,22 +691,22 @@ li {
   color: red;
 }
 .work.img-1-wrap .pointer2,.pointer3{
-  background-image: url('/images/travel.jpg');
+  background-image: url('/travel.jpg');
 }
 .work.img-2-wrap .pointer2,.pointer3{
-  background-image:  url('/images/mobile.jpg');
+  background-image:  url('/mobile.jpg');
 }
 .work.img-3-wrap .pointer2,.pointer3{
-  background-image:  url('/images/anime.jpg');
+  background-image:  url('/anime.jpg');
 }
 .work.img-4-wrap .pointer2,.pointer3{
-  background-image: url('/images/portfolio.jpg');
+  background-image: url('/portfolio.jpg');
 }
 .work.img-5-wrap .pointer2,.pointer3{
-  background-image:  url('/images/ui.jpg');
+  background-image:  url('/ui.jpg');
 }
 .work.img-6-wrap .pointer2,.pointer3{
-  background-image:  url('/images/education.jpg');
+  background-image:  url('/education.jpg');
 }
 /**
 .work.logo-wrap .cursor2,.cursor3{
