@@ -6,6 +6,12 @@
 html{
   font-size: 7.9444444444vw;
 }
+@media (max-width: 768px) {
+   html{
+    font-size: 7.9444444444vw;
+   }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -691,22 +697,22 @@ li {
   color: red;
 }
 .work.img-1-wrap .pointer2,.pointer3{
-  background-image: url('/travel.jpg');
+  background-image: url('./travel.jpg');
 }
 .work.img-2-wrap .pointer2,.pointer3{
-  background-image:  url('/mobile.jpg');
+  background-image:  url('./mobile.jpg');
 }
 .work.img-3-wrap .pointer2,.pointer3{
-  background-image:  url('/anime.jpg');
+  background-image:  url('./anime.jpg');
 }
 .work.img-4-wrap .pointer2,.pointer3{
-  background-image: url('/portfolio.jpg');
+  background-image: url('./portfolio.jpg');
 }
 .work.img-5-wrap .pointer2,.pointer3{
-  background-image:  url('/ui.jpg');
+  background-image:  url('./ui.jpg');
 }
 .work.img-6-wrap .pointer2,.pointer3{
-  background-image:  url('/education.jpg');
+  background-image:  url('./education.jpg');
 }
 /**
 .work.logo-wrap .cursor2,.cursor3{
@@ -961,6 +967,13 @@ for cursor animation
 .resume_inner .resume_list .small_query p {
   font-size: 0.4rem;
  }
+}
+@media screen and (max-width: 600px){
+  .resume_inner .resume_list {
+   position: relative;
+   left: -20px;
+   
+  }
 }
 
 
