@@ -435,6 +435,7 @@ a {
    display: none;
   }
   
+  
 
 @media screen and (max-width:768px){
 
@@ -442,6 +443,7 @@ a {
     width: 100%;
     height: 100vh;
     margin: 0;
+   
   }
   .title-h1 {
     line-height: 1.5rem;
@@ -457,16 +459,19 @@ a {
     line-height: 1.3;
   }
   .mobile-text .first {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .mobile-text .sec{
     margin-right: 2rem;
   }
   .mobile-text .third {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .mobile-text .fourth {
     margin-left: 1rem;
+  }
+  .down-row {
+    display: none;
   }
   
 }
@@ -604,7 +609,7 @@ li {
 .work{
   font-family: 'Poppins', sans-serif;
   width: 100%;
-
+  
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -794,13 +799,15 @@ for cursor animation
     
   }
 	.section-text .text {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 }
   @media (max-width: 460px) {
 
     .layout-inner {
+      margin-top: 1.4rem;
       padding: 0.5rem;
+      
     }
    
     .section-text ul {
@@ -809,7 +816,7 @@ for cursor animation
     }
     
     .section-text .text {
-      font-size: 1rem;
+      font-size: 1.9rem;
     }
     .section-links{
       font-size: 0.4rem;
@@ -1002,8 +1009,18 @@ for cursor animation
    left: -20px;
    
   }
+  .resume_inner {
+    min-height: 70vh;
+  }
+  .resume_inner  img{
+    margin-top: 3rem;
+  }
 }
-
+@media (max-width: 460px) {
+  .resume_inner{
+    padding: 0;
+  }
+}
 
 /*CONTACTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*********************/
 .contact_widget {
@@ -1111,6 +1128,7 @@ for cursor animation
   
   .contact_widget{
     min-height:fit-content;
+    margin-top: 5.5rem;
   }
   .section_contact h3 {
     font-size: 1.5rem;
