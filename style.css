@@ -1020,11 +1020,142 @@ for cursor animation
     padding: 0;
   }
 }
+/*EDUCATIONALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*********************/
+.edu {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+.edutxt h1{
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: 300;
+  color: #000000
+}
+.edu h3{
+  color: #000;
+}
+
+.edu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #CCD1D9;
+  z-index: 1
+}
+
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  background: #332e2e;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500
+  
+}
+
+.timeline-content span {
+  font-size: 15px;
+  color: #a4a4a4;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+  .edu:before {
+     left: 8px;
+     width: 2px;
+  }
+  .timeline-block {
+     width: 100%;
+     margin-bottom: 30px;
+  }
+  .timeline-block-right {
+     float: none;
+  }
+
+  .timeline-block-left {
+     float: none;
+     direction: ltr;
+  }
+  .eduani{
+    animation: fade-right 1s ease-in-out !important;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*CONTACTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*********************/
-.contact_widget {
-  padding-top: 1rem;
-}
+
 .section_contact {
   text-align: center;
   padding-top: 1rem;
@@ -1038,6 +1169,7 @@ for cursor animation
   display: block;
   line-height: 1.3;
 }
+/**
 .section_contact span.email {
   display: inline-block;
   border-bottom: 1.5px solid #000000;
@@ -1048,6 +1180,7 @@ for cursor animation
   line-height: 0.8;
   color: #000;
 }
+**/
 .quickcontact_widget {
   text-align: center;
   padding-top: 0;
@@ -1113,6 +1246,161 @@ for cursor animation
   font-size: 0.11rem;
   text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+.video {
+  min-width: 100%;
+ 
+  position: relative;
+  text-align: center;
+  background-color: transparent;
+
+
+}
+.video-img {
+  min-width: 100%;
+  min-height: 100%;
+
+}
+.video .overlay {
+  
+ 
+  width: 100%;
+  height: 100%;
+  color: #000000;
+ 
+  
+}
+
+
+.video .overlay .social i:last-child {
+  margin-right: 0;
+}
+.video .overlay .social i:hover {
+  border-color: #000000;
+  cursor: pointer;
+  box-shadow: 0 0 20px #0b8ffe;
+  transform: scale(1.2)
+}
+.video .overlay form {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.video .overlay form input {
+  height: 40px;
+  background-color: transparent;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+color: #000000;
+}
+.video .overlay form textarea {
+  background-color: transparent;
+  padding: 5px 0px;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 100%;
+color: #000000;
+}
+.video .overlay form input:focus,.video .overlay form textarea:focus {
+  border-bottom-color: #0b8ffe;
+  box-shadow: 0px 0px 20px rgba(11, 143, 254, 0.42);
+}
+.video .overlay form input::-webkit-input-placeholder,
+.video .overlay form textarea::-webkit-input-placeholder {
+  color: #000000;
+  text-transform: capitalize;
+}
+.video .overlay form [name="name"],
+.video .overlay form [name="email"],
+.video .overlay form [name="phone"] {
+  width: 31%;
+}
+.video .overlay form [name="website"],
+.video .overlay form [name="subject"] {
+  width: 48%;
+  margin-bottom: 80px;
+}
+.video .overlay form button {
+  background-color: transparent;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #000000;
+  color: #000000;
+  text-transform: uppercase;
+  transition: 1s ease;
+  overflow: hidden;
+}
+
+
+/* ----------- start media query for video & contact ----*/
+@media only screen and (max-width: 575px) {
+
+  .video .overlay form {
+      width: 90%;
+      margin: 40px auto 0;
+      flex-direction: column;
+      align-items: center;
+  }
+  .video .overlay form input {
+      width: 95% !important;
+      margin-bottom: 15px !important;
+  }
+  .video .overlay form textarea {
+      width: 95%;
+      margin-top: 15px;
+  }
+  .video .overlay form button {
+      width: 95%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  
+  .video .overlay form {
+      width: 90%;
+      margin: 60px auto 0;
+  }
+  .video .overlay form [name="name"],
+  .video .overlay form [name="name"] {
+      width: 48%;
+  }
+
+  .video .overlay form [name="email"] {
+      width: 100%;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 991px){
 
   .section_contact h3 {
@@ -1127,11 +1415,11 @@ for cursor animation
   
   .contact_widget{
     min-height:fit-content;
-    margin-top: 5.5rem;
+   
   }
   .section_contact h3 {
     font-size: 1.5rem;
-    margin-bottom: 1.7rem;
+ 
    }
   .section_contact span.email {
    font-size: 0.5rem;
