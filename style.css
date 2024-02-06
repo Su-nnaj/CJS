@@ -586,9 +586,7 @@ a {
   overflow: hidden;
   display: flex;
 }
-
-
-
+/* MY SERVICES*/
 
 
 
@@ -738,7 +736,7 @@ li {
   background-image:  url('./Baisap-Fitness.png');
 }
 .work.img-4-wrap .pointer2,.pointer3{
-  background-image: url('./portfolio\ template.png');
+  background-image: url('./company\ website.png');
 }
 .work.img-5-wrap .pointer2,.pointer3{
   background-image:  url('./ui.jpg');

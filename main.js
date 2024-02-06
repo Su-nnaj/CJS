@@ -106,6 +106,8 @@ for (var r = document.querySelectorAll(".nav__list-item"), a = r.length - 1; a >
 })(jQuery); 
 
 
+//card
+
 
 /*bg*************************************************8*/
 
