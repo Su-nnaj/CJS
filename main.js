@@ -368,7 +368,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+  function submitForm() {
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
 
+    if (!firstName || !lastName || !email || !message) {
+        document.getElementById('notification').style.display = 'block';
+        return;
+    }
 
+    // Here you can send the form data to a server-side script using AJAX
+    // For example, you can use Fetch API or XMLHttpRequest to send a POST request to a PHP script
+    // The PHP script will handle the email sending process
 
-
+    // Example using Fetch API:
+    fetch('send_email.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            message: message
+        }),
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log('Email sent successfully!');
+            // Optionally, you can display a success message to the user
+        } else {
+            console.error('Failed to send email.');
+            // Optionally, you can display an error message to the user
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Optionally, you can display an error message to the user
+    });
+}
