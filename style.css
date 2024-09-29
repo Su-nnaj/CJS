@@ -112,8 +112,10 @@ section {
 }
 .header-wrapper {
   position: relative;
-  width: calc(100% - 100px);
-  margin-left: 50px;
+  width: calc(100% - 100px); 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  box-sizing: border-box; 
 }
 .logo-wrap {
   position: absolute;
@@ -122,42 +124,34 @@ section {
   top: 40px;
   cursor: pointer;
   list-style: none;
+  font-size: 26px;
+  font-weight: bold;
 }
-.logo-wrap a {
-  cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #000000;
-  transition: all 0.3s ease-out;
- text-decoration: none;
-}
+
+
 .nav-but-wrap {
   position: relative;
   display: inline-block;
   float: right;
-  padding-left: 15px;
-  padding-top: 15px;
-  margin-top: 26px;
+  padding-left: 40px;
+  padding-top: 28px;
+  margin-top: 30px;
   transition: all 0.3s ease-out;
 }
 .menu-icon {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   position: relative;
   z-index: 2;
   cursor: pointer;
   display: block;
 }
 .menu-icon__line {
-  height: 2px;
-  width: 30px;
+  height: 5px;
+  width: 40px;
   display: block;
   background-color: #000000;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   cursor: pointer;
   -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
   transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
@@ -166,12 +160,12 @@ section {
     -webkit-transform 0.2s ease;
 }
 .menu-icon__line-left {
-  width: 16.5px;
+  width: 40px;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
 .menu-icon__line-right {
-  width: 16.5px;
+  width: 40px;
   float: right;
   -webkit-transition: all 200ms linear;
   -moz-transition: all 200ms linear;
@@ -405,25 +399,66 @@ body.nav-active .nav__list-item:nth-child(10) {
   -webkit-transition-delay: 1.7s;
   transition-delay: 1.7s;
 }
+
+@media (max-width: 768px) {
+  .logo-wrap img{
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    width: 55px;
+    height: auto;
+  }
+  .nav-but-wrap {
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-top: 34px;
+    transition: all 0.3s ease-out;
+  }
+  .menu-icon {
+    height: 20px;
+    width: 40px;
+    
+  }
+  .menu-icon__line {
+    height: 3px;
+    width: 40px;
+    
+  }
+  .header-wrapper {
+    position: relative;
+    width: calc(100% - 30px); 
+    margin: 0 auto; 
+    padding: 0 10px; 
+    box-sizing: border-box; 
+  }
+  
+  
+}
 /*************HOME****************************************************88**/
+
+
 a{
   text-decoration: none;
   color:#181717;
 }
+.info p {
+  width: 100%;
+  font-size: 18px !important;
+}
 .landing-page .content .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 140px;
- 
+  gap: 20px;
   height: 100vh;
+  width: 92%;
 }
 .container {
-  padding-top: 0.4rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-left: auto;
-  margin-right: auto;
+
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+
 }
 .home-icon .icon{
   padding: 18px 10px;
@@ -431,25 +466,34 @@ a{
 }
 .landing-page .image img{
   border-radius:100%;
+  
 }
-/* Small */
+
+.landing-page .content .info h1{
+  font-size: 55px !important;
+}
+/* Small
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-/* Medium */
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
-}
+} */
 
-@media (max-width: 1200px){
+@media (max-width: 1280px){
   .landing-page .content .info h1{
-    font-size: 40px !important;
+    font-size: 38px !important;
   }
   .landing-page .content .info h3{
+    font-size: 15px !important;
+  }
+  .info p {
+ 
     font-size: 15px !important;
   }
 }
@@ -559,6 +603,7 @@ a{
   .landing-page .content .info h1{
     font-size: 25px !important;
   }
+
   .landing-page .content .info h3{
     font-size: 15px !important;
   }
@@ -606,6 +651,7 @@ a{
   margin: 0 !important;
   color: #000000;
   font-size: 49px;
+  width: 100%;
 }
 .landing-page .content .info h3{
   font-size: 25px;
@@ -852,20 +898,13 @@ li {
   background-image: url('./nike.png');
 }
 .work.img-2-wrap .pointer2,.pointer3{
-  background-image:  url('./COR.png');
-}
-.work.img-3-wrap .pointer2,.pointer3{
   background-image:  url('./Baisap-Fitness.png');
 }
-.work.img-4-wrap .pointer2,.pointer3{
+.work.img-3-wrap .pointer2,.pointer3{
   background-image: url('./company\ website.png');
 }
-.work.img-5-wrap .pointer2,.pointer3{
-  background-image:  url('./ui.jpg');
-}
-.work.img-6-wrap .pointer2,.pointer3{
-  background-image:  url('./education.jpg');
-}
+
+
 /**
 .work.logo-wrap .cursor2,.cursor3{
   background-image: none;
