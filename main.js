@@ -352,9 +352,9 @@ function downloadCV() {
   // Create an anchor element
   var link = document.createElement('a');
   // Set the href attribute to the path of your CV file
-  link.href = 'Christian_CV.pdf';
+  link.href = 'Christian_CV.pdf'; 
   // Set the download attribute to specify the filename
-  link.download = 'Christian_CV.pdf';
+  link.download = 'Christian_CV.pdf'; 
   // Programmatically trigger a click event on the anchor element
   // This will prompt the browser to download the file
   link.click();
